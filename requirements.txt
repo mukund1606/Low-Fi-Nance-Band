@@ -1,0 +1,5 @@
+imutils
+opencv-python
+Pillow
+mediapipe
+streamlit_webrtc
