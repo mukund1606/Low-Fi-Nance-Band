@@ -89,6 +89,6 @@ CONVERSATION_ID="CONVERSATION_ID"
 ___
 ## Project Demo -
 Now Let's dive into the demo of our project.
-<iframe src="https://www.youtube.com/embed/4DacWibbhYM" style="width:100%;aspect-ratio:16/9;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/4DacWibbhYM/0.jpg)](http://www.youtube.com/watch?v=4DacWibbhYM)
 
 ___
