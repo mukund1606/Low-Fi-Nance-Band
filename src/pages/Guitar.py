@@ -7,12 +7,10 @@ import cv2
 from streamlit.runtime.scriptrunner import add_script_run_ctx
 from pygame import mixer
 
-st.set_page_config(
-    page_title="Low-Fi Nance Band - Guitar", page_icon="🎸", layout="wide"
-)
+st.set_page_config(page_title="Low-Fi Nance Band - Guitar", page_icon="🎸")
 st.title("Low-Fi Nance Band")
 st.subheader("Guitar")
-st.text(
+st.markdown(
     "Unleash your inner rockstar on our virtual guitar and let the music flow from your fingertips!"
 )
 

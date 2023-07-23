@@ -7,12 +7,10 @@ from collections import deque
 import av
 import cv2
 
-st.set_page_config(
-    page_title="Low-Fi Nance Band - Painter", page_icon="🎸", layout="wide"
-)
+st.set_page_config(page_title="Low-Fi Nance Band - Painter", page_icon="🎸")
 st.title("STEMist Hackathon - Project")
 st.subheader("Low-Fi Nance Band - AR Drawing Board")
-st.text(
+st.markdown(
     "Embrace the freedom to showcase your creativity, whether through intricate designs, captivating illustrations, or even in a way of a visual board."
 )
 

@@ -7,10 +7,10 @@ import cv2
 from streamlit.runtime.scriptrunner import add_script_run_ctx
 from pygame import mixer
 
-st.set_page_config(page_title="Low-Fi Nance Band - Drums", page_icon="🎸", layout="wide")
+st.set_page_config(page_title="Low-Fi Nance Band - Drums", page_icon="🎸")
 st.title("Low-Fi Nance Band")
 st.subheader("Drums")
-st.text(
+st.markdown(
     "March to the beat of your own rhythm on our virtual drums and create musical masterpieces with every strike!"
 )
 

@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Low-Fi Nance Band", page_icon="🎸", layout="wide")
 st.title("STEMist Hackathon - Project")
-st.markdown("## [Low-Fi Nance Band]()")
+st.markdown("## [Low-Fi Nance Band](https://github.com/mukund1606/Low-Fi-Nance-Band)")
 st.subheader("Project Description - ")
 st.markdown(
     """- The Low-Fi Nance Band is a set of virtual Instruments and lyrics generator.
@@ -107,13 +107,47 @@ st.markdown(
 
 st.divider()
 
+st.header("Installation and Setup - ")
+st.caption("To run this project on your local machine, follow the steps given below -")
+"""
+```bash
+git clone git@github.com:mukund1606/Low-Fi-Nance-Band.git
+cd Low-Fi-Nance-Band
+python3 -m venv venv -r packages.txt
+sudo apt install < packages.txt # Not Sure About This. I am Windows User
+```
+
+### Setup Environment Variables for ChatGPT Lyrics Generation
+#### Obtaining SESSION_TOKEN for ChatGPT
+
+1. Go to https://chat.openai.com/chat and open the developer tools by `F12`.
+2. Find the `__Secure-next-auth.session-token` cookie in `Application` > `Storage` > `Cookies` > `https://chat.openai.com`.
+3. Copy the value in the `Cookie Value` field.
+"""
+st.image("src/assets/SESSION.png", caption="SESSION_TOKEN")
+
+"""
+
+#### Get Conversation ID from URL(Optional)"""
+
+st.image("src/assets/CONVERSATION.png", caption="CONVERSATION_ID")
+"""
+
+### .env File -
+```bash 
+SESSION_TOKEN="SESSION_TOKEN"
+CONVERSATION_ID="CONVERSATION_ID"
+```"""
+
+
+st.divider()
+
 
 st.header("Project Demo -")
 st.caption("Now Let's dive into the demo of our project.")
 st.caption("")
-st.caption("")
-st.subheader("1. Lyrics Generator -")
-with open("src/assets/Lyrics Generator.mp4", "rb") as f:
-    video = f.read()
-    st.video(video)
+st.markdown(
+    """<iframe src="https://www.youtube.com/embed/4DacWibbhYM" style="width:100%;aspect-ratio:16/9;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>""",
+    unsafe_allow_html=True,
+)
 st.divider()
